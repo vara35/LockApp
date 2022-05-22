@@ -29,7 +29,7 @@ const UnLockAppPage = () => {
     ? 'Your Device is Unlocked'
     : 'Your Device is Locked'
 
-  const updateLockButton = () => console.log('Trigger')
+  const updateLockButton = () => setLockStatusFun(prevState => !prevState)
 
   return (
     <UnLockPageMainContainer>
